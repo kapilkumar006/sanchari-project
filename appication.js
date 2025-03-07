@@ -122,17 +122,27 @@ if(mybox){
 
     let cityName = clickedElement.querySelector(".city-name")?.textContent || "No .city-name";
 
-    const element = document.querySelector('#card-8'); // Select the element you want to check
-     const parent = element.parentNode; // Get the parent of the element
+document.getElementById("destination").value = cityName;
 
-if (element != parent.lastElementChild) {
+
+
+document.getElementById("numPeople").value="1";
+
+})
+}
+
+// this one should not
+
+//     const element = document.querySelector('#card-8'); // Select the element you want to check
+//      const parent = element.parentNode; // Get the parent of the element
+
+// if (element != parent.lastElementChild) {
    
-} 
- document.getElementById("destination").value = cityName;
+// } 
 
 
 
-    document.getElementById("numPeople").value="1";
+
 
 // console.log(cityName);
 //     let ele = e.target.id;
@@ -141,9 +151,31 @@ if (element != parent.lastElementChild) {
 //     }
    
     // console.log(ele.include())
-})
-}
 
+
+
+
+
+
+
+// chat
+
+
+
+// mybox.addEventListener('click', function (e) {
+//     let clickedElement = e.target.closest(".city-card"); // Find the nearest .city-card
+//     if (!clickedElement) return; // Exit if not clicking on a card
+    
+//     let cityNameElement = clickedElement.querySelector(".city-name");
+
+//     if (cityNameElement) {
+//         document.getElementById("destination").value = cityNameElement.textContent;
+//     } else {
+//         document.getElementById("destination").value = "Custom Destination"; // Handle last card
+//     }
+
+//     document.getElementById("numPeople").value = "1";
+// });
 
 
 // function addtwonumbers(a,b){
