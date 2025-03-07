@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="icon" type="image/x-icon" href="assets/logo.jpeg" class="favicon">
+    <title>Sanchari</title>
+    <link rel="stylesheet" href="style2.css">
+
+ <!-- bootstrap@5.0 cnd -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body class="details">
+<!-- section1 -->
+
+<img src="assets/pics/" alt="">
+
+ <!-- background video section -->
+
+ <video autoplay muted loop id="myVideo">
+    <source src="assets/background videos/detailBackgroundVideos.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+
+
+<!-- city cards section -->
+<div id="main-box">
+</div>
+
+
+ <!-- <div class="container mt-5">
+    <div class="card-inner-container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="city-card" id="city-1"  style="background-image: url('assets/pics/PARIS\ 2.jpg');">
+                    <div class="city-overlay">
+                        <h4 id="city-1" >Paris, France</h4>
+                        <p class="desc-1">The city of love and home to the Eiffel Tower.</p>
+                        <p id="trip-cost">$350</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city-card" id="city-2"  style="background-image: url('assets/pics/nyc\ 5.jpg');">
+                    <div class="city-overlay">
+                        <h4 id="city-2">New York, USA</h4>
+                        <p>The city that never sleeps, featuring Times Square.</p>
+                        <p id="trip-cost">$350</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city-card" id="city-3"  style="background-image: url('assets/pics/tokyo.avif');">
+                    <div class="city-overlay">
+                        <h4>Tokyo, Japan</h4>
+                        <p>A bustling metropolis blending tradition and modernity.</p>
+                        <p>$350</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city-card" id="city-4"  style="background-image: url('assets/pics/swiss\ 2.jpg');">
+                    <div class="city-overlay">
+                        <h4>Swiss Alps, Switzerland</h4>
+                        <p>Stunning mountain ranges perfect for skiing and hiking.</p>
+                        <p>$350</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city-card" id="city-5"  style="background-image: url('assets/pics/dubai\ 2.jpg');">
+                    <div class="city-overlay">
+                        <h4>Dubai, UAE</h4>
+                        <p>Famous for the Burj Khalifa and luxury lifestyle.</p>
+                        <p>$350</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city-card"  id="city-6"  style="background-image: url('assets/pics/sydney\ 3.jpg');">
+                    <div class="city-overlay">
+                        <h4>Sydney, Australia</h4>
+                        <p>Home to the Opera House and stunning beaches.</p>
+                        <p>$350</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city-card" id="city-7"  style="background-image: url('assets/pics/rome.jpg');">
+                    <div class="city-overlay">
+                        <h4>Rome, Italy</h4>
+                        <p>The Eternal City with ancient ruins and rich history.</p>
+                        <p>$350</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city-card" id="city-8"  style="background-image: url('assets/pics/BALI\ 2.jpg');">
+                    <div class="city-overlay">
+                        <h4>Bali, Indonesia</h4>
+                        <p>A tropical paradise known for its beaches and temples.</p>
+                        <p>$350</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city-card" id="city-9"  style="background-image: url('assets/pics/maldives\ 2.jpg');">
+                    <div class="city-overlay">
+                        <h4>Maldives</h4>
+                        <p>Idyllic islands famous for luxury resorts and clear waters.</p>
+                        <p>$350</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-4">
+                <div class="city-card" onclick=" openForm()"  style="background-image: url('assets/pics/Unknown\ 5.jpeg.jpg');">
+                    <div class="city-overlay">
+                        <h4>Select your own destination</h4>
+                        <p>From cobblestone streets to breathtaking vistas, the world's hidden cities await.</p>
+                        <p>$350</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</div> -->
+
+<!-- <p class="two-p-plan">@ The given budget of above plan are only for 2 people in us dollar</p> -->
+<div class="col-md-4 offset-md-4">
+    <div class="city-card" onclick=" openForm()"  style="background-image: url('assets/pics/Unknown\ 5.jpeg.jpg');">
+        <div class="city-overlay">
+            <h4>Select your own destination</h4>
+            <p>From cobblestone streets to breathtaking vistas, the world's hidden cities await.</p>
+            
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!--Form section -->
+
+<div id="cityForm" class="form-popup">
+    <span class="close-btn" onclick="closeForm()">&times;</span>
+    <h2>Plan Your Adventure 🌍</h2>
+        
+        <form id="travelForm">
+            <label for="travelingFrom">📍 Where Are You Traveling From?</label>
+            <input type="text" id="travelingFrom" placeholder="E.g., New York, Sydney" onblur="validateField('travelingFrom')" required>
+            <span class="warning" id="travelingFrom-warning">This field is required.</span>
+            
+            <label for="destination">🌟 Where’s Your Dream Destination?</label>
+            <input type="text" id="destination" placeholder="E.g., Paris, Maldives, Tokyo" onblur="validateField('destination')" required>
+            <span class="warning" id="destination-warning">This field is required.</span>
+            
+            <label for="tripType">🎭 What’s Your Travel Style?</label>
+            <select id="tripType" onchange="toggleFields(); validateField('tripType')" required>
+                <option value="">-- Select Travel Type --</option>
+                <option value="Solo">🧳 Solo Adventure</option>
+                <option value="Family">👨‍👩‍👧‍👦 Family Getaway</option>
+                <option value="Friends">🎉 Friends’ Adventure</option>
+                <option value="Couple">💑 Romantic Escape</option>
+            </select>
+            <span class="warning" id="tripType-warning">This field is required.</span>
+            
+            <div id="travelersField" style="display: none;">
+                <label for="numPeople">👥 How Many Are Traveling?</label>
+                <input type="number" id="numPeople" min="1" placeholder="Enter number of travelers" onblur="validateField('numPeople')">
+                <span class="warning" id="numPeople-warning">Please enter number of travelers.</span>
+            </div>
+            
+            <label for="budget">💰 What’s Your Budget ($)?</label>
+            <input type="number" id="budget" min="100" placeholder="E.g., 2000" onblur="validateField('budget')" required>
+            <span class="warning" id="budget-warning">This field is required.</span>
+            
+            <label for="travelMode">🚀 Preferred Mode of Travel?</label>
+            <select id="travelMode">
+                <option value="Plane">✈ Flight</option>
+                <option value="Train">🚆 Train Journey</option>
+                <option value="Car">🚗 Road Trip</option>
+                <option value="Ship">🚢 Cruise</option>
+            </select>
+            
+            <label for="numDays">📅 How Many Days?</label>
+            <input type="number" id="numDays" min="1" placeholder="Enter number of days" onblur="validateField('numDays')" required>
+            <span class="warning" id="numDays-warning">This field is required.</span>
+            
+            <label for="healthConditions">⚕ Any Health Considerations?</label>
+            <input type="text" id="healthConditions" placeholder="E.g., Asthma, Diabetes, None">
+            
+            <button type="button" onclick="submitForm()" class="form-btn">🌍 Let’s Plan!</button>
+        </form>
+</div>
+
+<div id="popup" class="popup">
+    <h3>Your Travel Plan 🏖</h3>
+    <p id="popupContent"></p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<script src="appication.js"></script>
+
+
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+ 
+ 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
