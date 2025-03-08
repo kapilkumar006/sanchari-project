@@ -91,8 +91,11 @@ city = [
         cost: 574,
         people: 2
     },
+    
+
    
 ];
+
 console.log(city);
 
 const mybox=document.getElementById("main-box")
