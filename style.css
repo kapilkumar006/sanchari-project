@@ -34,6 +34,7 @@ header nav ul{
   list-style: none;
   display: flex;
   margin-top: 18px;
+  margin-right: 27px;
 
 }
 header nav ul li{
@@ -51,9 +52,9 @@ header nav ul li a{
 header nav ul li a:hover{
   color: grey;
   /* font-size: 20px; */
-  /* background-color: red;
-  padding: 4%;
-  border-radius: 2px; */
+  background-color:  #b4dddd;;
+  padding: 21%;
+  border-radius: 26px;
 }
 /* header nav ul li:nth-last-child(1){
   background-color: #3a7d7d;

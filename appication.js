@@ -93,6 +93,13 @@ city = [
     },
     
 
+    {
+        id: 9,
+        name: 'Select your own destination',
+       image: 'assets/pics/Unknown\ 5.jpeg.jpg',
+       about:"From cobblestone streets to breathtaking vistas, the world's hidden cities await.",
+       
+    },
    
 ];
 
@@ -123,16 +130,21 @@ if(mybox){
     let text = clickedElement.textContent; // Get its text content
     console.log("Clicked element text:", text);
 
-    let cityName = clickedElement.querySelector(".city-name")?.textContent || "No .city-name";
+    let cityName = clickedElement.querySelector(".city-name")?.textContent || "No .city-name" ;
 
-document.getElementById("destination").value = cityName;
+   
 
-
-
-document.getElementById("numPeople").value="1";
+    if (cityName === "Select your own destination") {
+        document.getElementById("destination").value = "";
+        document.getElementById("numPeople").value = "";
+    } else {
+        document.getElementById("destination").value = cityName;
+        document.getElementById("numPeople").value = "1";
+    }
 
 })
 }
+
 
 // this one should not
 
