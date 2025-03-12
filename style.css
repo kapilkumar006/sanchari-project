@@ -3,6 +3,7 @@
 .navbar-brand img {
   width: 50px;
   border-radius: 50%;
+ 
 }
 
 .video-slide {
@@ -23,13 +24,26 @@
   justify-content: center;
   color: white;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .home .content {
   z-index: 2;
 }
-
+#navbarNav{
+  margin-right: -98px;
+}
+.nav-item:hover{
+  color: grey;
+  /* font-size: 20px; */
+  background-color:  #b4dddd;;
+ 
+  border-radius: 26px;
+}
+.text-center {
+  text-align: center !important;
+  margin-top: 137px;
+}
 .about-img img {
   max-width: 100%;
   border-radius: 10px;
@@ -40,6 +54,39 @@
   transform: scale(1.1);
 }
 
+
+.Services-heading{
+  padding-top: 70px ;
+}
+#services-container{
+  padding-bottom: 90px;
+}
+.Services-cards{
+  margin-top: -80px;
+}
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.box i {
+  font-size: 3rem;
+  color: #3a7d7d;
+  margin-bottom: 20px;
+}
+
+.box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.box p {
+  color: #777;
+}
+
+#contact-section{
+  margin-top: 70px;
+  padding-top: 1px;
+}
 .services .box,
 .testimonials .testimonial,
 .contact-section .contact-box {
@@ -51,7 +98,15 @@
 .contact-section .contact-box:hover {
   transform: translateY(-10px);
 }
-
+.Travelers-heading{
+  margin-top:   70px;
+}
+.Travelers-cards{
+  margin-top: -57px ;
+}
+.Travelers-cards p{
+  color: #777;
+}
 .contact-box {
 width: 338px;
 height: 338px; /* Keep width and height equal for a circle */
@@ -63,6 +118,12 @@ align-items: center;
 border: 2px solid #3a7d7d;
 padding: 15px;
 text-align: center;
+}
+.contact-box:hover {
+  transform: scale(1.1);
+}
+.contact-caption{
+  margin-top: 10px;
 }
 .c-box{
 height: 100%;
@@ -76,6 +137,7 @@ align-items: center;
 .contact-box {
 width: 70vw; /* Adjust width based on viewport */
 height: 70vw; /* Maintain circular shape */
+margin-bottom: 7px;
 }
 }
 
@@ -83,6 +145,7 @@ height: 70vw; /* Maintain circular shape */
 .contact-box {
 width: 80vw;
 height: 80vw;
+margin-bottom: 7px;
 }
 }
 
