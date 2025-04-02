@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Travel Plan</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon" type="image/jpeg" href="assets/pics/logo.jpeg" />
+   
+</head>
+<body>
+
+    <!-- Travel Background Elements -->
+    <!-- <img src="assets/airplane.png" class="bg-icon airplane">
+    <img src="assets/passport.png" class="bg-icon passport"> -->
+
+    <div class="container">
+        <!-- Download Button -->
+        <button class="download-btn" onclick="downloadOutput()">📥 Download</button>
+
+        <h2>Your Travel Plan 🌍</h2>
+
+        <div id="output">
+            <p><strong>📍 Traveling From:</strong> <span id="travelingFrom-output"></span></p>
+            <p><strong>📌 Destination:</strong> <span id="destination-output"></span></p>
+            <p><strong>🎭 Travel Style:</strong> <span id="tripType-output"></span></p>
+            <p><strong>👥 Number of Travellers:</strong> <span id ="numPeople-output"></span></p>
+            <p><strong>✈ Travel Mode:</strong> <span id="mode-output"></span></p>
+            <p><strong>📅 Trip Duration:</strong> <span id="duration-output"></span> days</p>
+            <p><strong>💰 Budget (for the entire trip):</strong> $<span id="budget-output"></span></p>
+            <p><strong> ⚕  Health Considerations:</strong> <span id="health-output"></span></p>
+            
+            <div id="ai-itinerary" class="itinerary-box">Loading...</div>
+        </div>
+
+        <!-- Modify Plan Button -->
+        <button class="modify-btn" onclick="modifyPlan()">🌍Try another destination</button>
+
+        <h3 class="happy-journey"> Happy Journey!✈🌍</h3>
+    </div>
+    <script  src="application.js"></script>
+<script src="ai-integration.js"  type="module" ></script>
+
+</body>
+</html>

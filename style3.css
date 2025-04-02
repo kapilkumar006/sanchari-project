@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    position: relative;
+}
+
+/* Container Box */
+.container {
+    max-width: 1100px;
+    background: white;
+    padding: 25px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* Output Styling */
+#output {
+    text-align: left;
+    padding: 20px;
+    border: 2px dashed #3498db;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* AI-Generated Itinerary Box */
+.itinerary-box {
+    background: #eef2ff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #3498db;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Download Button */
+.download-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    background: #218838;
+}
+
+/* Modify Plan Button */
+.modify-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modify-btn:hover {
+    background: #0056b3;
+}
+
+/* Travel Theme Elements */
+.bg-icon {
+    position: absolute;
+    opacity: 0.1;
+    width: 100px;
+}
+
+.airplane {
+    top: 20px;
+    left: 30px;
+    transform: rotate(-20deg);
+}
+
+.passport {
+    bottom: 50px;
+    right: 30px;
+}
+
+/* Happy Journey Message */
+.happy-journey {
+    font-size: 20px;
+    color: #0f7285 ;
+    margin-top: 30px;
+}
+@media (min-width: 1200px) {
+    .container {
+      max-width: 70%; /* Responsive width */
+  }
+  }

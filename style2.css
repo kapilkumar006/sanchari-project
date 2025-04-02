@@ -61,6 +61,10 @@
     .city-card {
         width: 45%; /* Adjust for smaller screens */
     }
+      .form-popup {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -100,6 +104,8 @@
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     overflow-y: auto;
+    overflow-x: hidden; /* Add this to prevent horizontal scrolling */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 .form-popup .close-btn {
     position: absolute;
@@ -109,7 +115,49 @@
     font-size: 20px;
 }
 
+#travelForm {
+    width: 100%;
+    box-sizing: border-box;
+}
 
+#travelForm input,
+#travelForm select {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.autocomplete-list {
+  list-style: none;
+    padding: 0;
+    margin: 0;
+    border: none !important; /* Remove any default borders */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: add subtle shadow instead */
+    background: white;
+    position: absolute;
+    width: calc(100% - 4px); /* Account for input borders */
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.autocomplete-list li {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none; /* Ensure no borders */
+    border-bottom: 1px solid white; /* Optional: light separator */
+}
+
+.autocomplete-list li:hover {
+    background-color: #f5f5f5;
+}
+#destination, #otherTravelingFrom {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#destination-suggestions, #from-suggestions {
+    margin-top: 0;
+}
 /* #card-9{
     margin-left: 510px;
 } */
@@ -191,5 +239,26 @@ button:hover {
 .two-p-plan{
     position: absolute;
 }
+
+.suggestions {
+    list-style: none;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    z-index: 999;
+  }
+  .suggestions li {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .suggestions li:hover {
+    background-color: #eee;
+  }
+  
 
 
